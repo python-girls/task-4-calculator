@@ -84,7 +84,7 @@ python calculator.py
 
 ```
 calculator/
-├── calculator.py      # Основной файл с кодом калькулятора
+├── lab4.py      # Основной файл с кодом калькулятора
 ├── requirements.txt   # Файл зависимостей
 ├── README.md          # Документация (этот файл)
 └── .gitignore         # Файл для игнорирования ненужных файлов в Git
