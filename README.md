@@ -41,7 +41,7 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-### Способ 2: Использование uv (альтернатива pip)
+### Использование uv (альтернатива pip)
 
 Если у вас установлен [uv](https://github.com/astral-sh/uv):
 
