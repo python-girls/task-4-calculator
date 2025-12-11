@@ -128,7 +128,8 @@ class Calculator:
                 i += 1
             elif token in '+-*/^':
                 while (operators and operators[-1] != '(' and
-                       self._get_priority(operators[-1]) >= self._get_priority(token)):
+                       (self._get_priority(operators[-1]) > self._get_priority(token) or
+                        (self._get_priority(operators[-1]) == self._get_priority(token) and token != '^'))):
                     self._apply_operation(values, operators)
                 operators.append(token)
                 i += 1
