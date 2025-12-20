@@ -213,12 +213,7 @@ class Calculator:
                 result = a * b
             elif operator == '/':
                 if b == 0:
-                    if a == 0:
-                        result = math.nan
-                    elif a > 0:
-                        result = math.inf
-                    else:
-                        result = -math.inf
+                    result = math.nan
                 else:
                     result = a / b
             elif operator == '^':
@@ -275,7 +270,7 @@ class Calculator:
             if a_is_inf and b_is_inf:
                 return math.nan
 
-            if a == 0 and b == 0:
+            if b == 0:
                 return math.nan
 
             if a_is_inf:
